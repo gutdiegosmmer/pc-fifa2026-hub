@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026世界杯 · 简明观赛指南与访问提醒</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #fbe9e0 0%, #f6d5c0 50%, #f1c4a8 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2.4rem 1.2rem;
+            line-height: 1.7;
+            color: #3c2f2b;
+        }
+        .page {
+            max-width: 820px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .card {
+            background: #fffcf9;
+            border-radius: 28px;
+            padding: 2.8rem 2.8rem 3.2rem;
+            box-shadow: 0 18px 40px rgba(130, 70, 40, 0.12), 0 6px 12px rgba(80, 40, 20, 0.06);
+            backdrop-filter: blur(2px);
+            transition: box-shadow 0.2s;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #3b261d;
+            margin-bottom: 0.2rem;
+            line-height: 1.2;
+            position: relative;
+        }
+        .subhead {
+            font-size: 1rem;
+            color: #7b5f54;
+            margin-top: 0.1rem;
+            margin-bottom: 1.8rem;
+            border-left: 4px solid #d9b39a;
+            padding-left: 0.9rem;
+            font-weight: 400;
+            background: rgba(241, 188, 160, 0.16);
+            border-radius: 0 6px 6px 0;
+            display: inline-block;
+        }
+        .meta {
+            font-size: 0.85rem;
+            color: #9e7d6f;
+            margin-bottom: 1.6rem;
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #edd9ce;
+            padding-bottom: 1rem;
+        }
+        .meta span {
+            background: #f3e4db;
+            padding: 0.1rem 0.7rem;
+            border-radius: 20px;
+            font-weight: 450;
+        }
+        p {
+            margin-bottom: 1.4rem;
+            font-size: 1.03rem;
+        }
+        .lead {
+            font-size: 1.12rem;
+            background: #f7ede6;
+            padding: 1.2rem 1.6rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            border-left: 6px solid #c69278;
+            color: #2f201b;
+        }
+        .highlight-link {
+            background: #f3e0d4;
+            padding: 0.2rem 0.5rem;
+            border-radius: 14px;
+            font-weight: 500;
+            transition: background 0.2s, box-shadow 0.2s;
+            white-space: nowrap;
+        }
+        .highlight-link a {
+            text-decoration: none;
+            color: #874f36;
+            font-weight: 550;
+        }
+        .highlight-link a:hover {
+            color: #572e1b;
+            text-decoration: underline;
+        }
+        .highlight-link:hover {
+            background: #ecd3c2;
+            box-shadow: 0 2px 8px rgba(150, 80, 40, 0.1);
+        }
+        .inset-box {
+            background: #f5e8e0;
+            padding: 1.4rem 1.8rem;
+            border-radius: 24px;
+            margin: 1.8rem 0;
+            border: 1px solid #e5cfc2;
+        }
+        .inset-box p:last-child {
+            margin-bottom: 0;
+        }
+        .quote-note {
+            background: #fcf3ed;
+            padding: 1.2rem 1.8rem;
+            border-radius: 18px;
+            margin: 1.6rem 0;
+            font-style: normal;
+            border-left: 4px solid #c69278;
+            font-size: 1rem;
+            color: #3e2c25;
+            box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.7);
+        }
+        .quote-note::before {
+            content: "💡 提醒 · ";
+            font-weight: 600;
+            color: #9c6549;
+        }
+        .faq-item {
+            margin-top: 1.2rem;
+            border-top: 1px dashed #e0c9bc;
+            padding-top: 1.2rem;
+        }
+        .faq-item:first-of-type {
+            border-top: none;
+            padding-top: 0.2rem;
+        }
+        .faq-q {
+            font-weight: 600;
+            color: #4f342b;
+            display: block;
+            margin-bottom: 0.2rem;
+            font-size: 1.02rem;
+        }
+        .faq-a {
+            color: #4a3831;
+            padding-left: 0.2rem;
+        }
+        .visit-line {
+            margin-top: 2rem;
+            padding: 1.4rem 1.6rem;
+            background: #ffffffd6;
+            border-radius: 40px;
+            text-align: center;
+            backdrop-filter: blur(4px);
+            border: 1px solid #edd9ce;
+            font-size: 1.05rem;
+            font-weight: 450;
+        }
+        .visit-line .big-link {
+            font-weight: 600;
+            font-size: 1.2rem;
+            background: #dbb9a6;
+            padding: 0.1rem 1.2rem;
+            border-radius: 60px;
+            display: inline-block;
+            margin-left: 0.3rem;
+            transition: 0.15s;
+        }
+        .visit-line .big-link a {
+            color: #2f1d16;
+            text-decoration: none;
+        }
+        .visit-line .big-link a:hover {
+            color: #130b08;
+            text-decoration: underline;
+        }
+        .visit-line .big-link:hover {
+            background: #cfaa93;
+            box-shadow: 0 2px 10px rgba(130, 70, 30, 0.15);
+        }
+        @media (max-width: 580px) {
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+            .card {
+                padding: 1.8rem 1.2rem 2rem;
+                border-radius: 24px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .lead {
+                padding: 0.8rem 1.2rem;
+                font-size: 1rem;
+            }
+            .meta span {
+                font-size: 0.75rem;
+            }
+            .inset-box {
+                padding: 1rem 1.2rem;
+            }
+            .visit-line {
+                padding: 1rem 0.8rem;
+                flex-direction: column;
+            }
+        }
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #8b6e60;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="card">
+        <h1>2026世界杯 · 简明观赛指南</h1>
+        <div class="subhead">从筹备到开赛 · 你需要了解的几件事</div>
+        <div class="meta">
+            <span>📅 更新于 2026 年 3 月</span>
+            <span>🏟️ 北美三国联办</span>
+            <span>⚽ 48 支决赛圈球队</span>
+        </div>
+
+        <p class="lead">
+            四年一度的足坛盛会即将拉开帷幕。无论你计划前往现场，还是通过屏幕追随赛事，提前梳理关键信息能大幅提升观赛体验。本文从日程、转播、签证与门票等角度提供一份精炼的参考。
+        </p>
+
+        <p>
+            2026 年 <strong>世界杯</strong> 将由美国、加拿大和墨西哥联合举办，这是历史上首次由三个国家共同承办。决赛圈球队扩军至 48 支，比赛场次增加到 80 场。赛程跨越 16 座城市，从东海岸到西海岸，时区跨度大，需要提前规划你关注的比赛时间。如果你还不确定官方信息入口，可以直接访问 <span class="highlight-link"><a href="https://pc-fifa2026.com">世界杯</a></span> 官方网站，那里整合了赛程、分组及最新公告。
+        </p>
+
+        <div class="inset-box">
+            <p><strong>📋 实用清单（出发前核对）</strong></p>
+            <p>✔ 确认比赛城市及场馆 —— 建议下载官方场馆地图<br>
+            ✔ 检查护照有效期（需覆盖 2026 年 7 月以后）<br>
+            ✔ 美国/加拿大/墨西哥签证或 ESTA/eTA 授权<br>
+            ✔ 预订住宿与交通——热门城市酒店已开始涨价<br>
+            ✔ 关注 FIFA 官方票务系统，仅通过授权渠道购票</p>
+        </div>
+
+        <p>
+            对于中国球迷，最关心的莫过于时差与直播渠道。本届赛事大部分比赛时间对应北京时间的深夜至上午。国内主流平台已陆续公布转播计划，你可以提前订阅提醒。另外，<strong>门票申购</strong>已进入第二阶段，随机抽签与先到先得并行。任何票务疑问请以 <span class="highlight-link"><a href="https://pc-fifa2026.com">世界杯</a></span> 官网票务页面为准，避免通过非正规渠道交易。
+        </p>
+
+        <div class="quote-note">
+            北美三国入境政策各自独立：持美国签证不一定能免签进入加拿大或墨西哥。建议尽早确认目的地国的签证要求，预留至少三个月的办理周期。
+        </div>
+
+        <p>
+            除了比赛本身，世界杯也是一次文化体验。多伦多、洛杉矶、墨西哥城都将设立球迷嘉年华区。如果你计划自驾穿梭于不同城市，请留意跨境驾驶许可和保险要求。部分场馆周边将实施交通管制，提前下载离线地图更稳妥。
+        </p>
+
+        <!-- FAQ 摘要 -->
+        <div style="margin-top: 1.8rem;">
+            <h3 style="font-weight: 550; font-size: 1.2rem; color: #4a332b; border-bottom: 2px solid #edd9ce; padding-bottom: 0.3rem; display: inline-block;">常见问题摘要</h3>
+            <div class="faq-item">
+                <span class="faq-q">❓ 我抽中了门票，但无法前往，可以转让吗？</span>
+                <span class="faq-a">FIFA 官方允许在指定窗口期内通过其转售平台以原价转让，禁止私下溢价交易。详情见 <span class="highlight-link"><a href="https://pc-fifa2026.com">世界杯</a></span> 票务条款。</span>
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">❓ 是否需要购买专门的旅行保险？</span>
+                <span class="faq-a">强烈建议。部分场馆所在州/省要求出示医疗保险证明。建议包含医疗运送和行程取消保障。</span>
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">❓ 哪些城市之间的交通比较方便？</span>
+                <span class="faq-a">东北走廊（波士顿–纽约–费城–华盛顿）有 Amtrak 铁路；西海岸洛杉矶–旧金山可选择飞行或自驾。跨境行程建议预留额外安检时间。</span>
+            </div>
+        </div>
+
+        <div class="visit-line">
+            <span>🔗 官方信息汇总 · 赛程 · 票务 · 场馆指南</span>
+            <span class="big-link"><a href="https://pc-fifa2026.com">世界杯</a></span>
+        </div>
+
+        <footer>
+            本文仅作参考，所有信息以主办方最新发布为准。请通过正规渠道获取门票与旅行文件。
+        </footer>
+    </div>
+</div>
+</body>
+</html>
